@@ -1,0 +1,32 @@
+﻿<Window x:Class="Messenger.AutorizationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Messenger"
+        mc:Ignorable="d"
+        Title="AutorizationWindow" Height="450" Width="500"
+         WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" Text="Авторизация" TextAlignment="Center" VerticalAlignment="Center" FontSize="25"></TextBlock>
+
+        <TextBlock Grid.Row="1">Введите логин</TextBlock>
+        <TextBox Name="field_Login_Aut" Grid.Row="2" Margin="1 0 1 0"></TextBox>
+        <TextBlock Grid.Row="3">Введите пароль</TextBlock>
+        <TextBox Name="field_password_Aut" Grid.Row="4" Margin="1 0 1 0"></TextBox>
+
+        <Button Name="Button_Autorization" Grid.Row="5" Width="250" Height="40" Click="Button_Autorization_Click">Войти</Button>
+
+
+    </Grid>
+</Window>

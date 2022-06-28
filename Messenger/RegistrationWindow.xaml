@@ -1,0 +1,38 @@
+﻿<Window x:Class="Messenger.RegistrationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Messenger"
+        mc:Ignorable="d"
+        Title="RegistrationWindow" Height="450" Width="500"
+         WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" Text="Регистрация" TextAlignment="Center" VerticalAlignment="Center" FontSize="25"></TextBlock>
+        <!--<TextBlock x:Name="What" Grid.Row="0" TextAlignment="Center" VerticalAlignment="Center" FontSize="25"></TextBlock>-->
+
+
+        <TextBlock Grid.Row="1">Введите логин</TextBlock>
+        <TextBox Name="field_Login" Grid.Row="2" Margin="1 0 1 0"></TextBox>
+        <TextBlock Grid.Row="3">Введите пароль</TextBlock>
+        <TextBox Name="field_password" Grid.Row="4" Margin="1 0 1 0"></TextBox>
+        <TextBlock Grid.Row="5">Повторите пароль</TextBlock>
+        <TextBox Name="field_password2" Grid.Row="6" Margin="1 0 1 0"></TextBox>
+
+
+        <Button Name="Button_Registration" Grid.Row="7" Width="250" Height="40" Click="Button_Registration_Click">Зарегестрироваться</Button>
+
+    </Grid>
+</Window>

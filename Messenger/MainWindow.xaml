@@ -1,0 +1,42 @@
+﻿<Window x:Class="Messenger.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Messenger"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="200" Width="500" ResizeMode="NoResize"
+         WindowStartupLocation="CenterScreen">
+    <Grid Background="WhiteSmoke">
+
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" TextAlignment="Center" VerticalAlignment="Center" FontSize="72" Text="Chat" Foreground="SlateGray" FontFamily="Bahnschrift"></TextBlock>
+
+        <TextBlock Grid.Row="2" Grid.Column="1" Text="или" TextAlignment="Center" VerticalAlignment="Center" FontSize="10" Foreground="#FFA1A1A1"></TextBlock>
+
+        <Button Name="Button_Registration" Grid.Row="2" Grid.Column="0" FontSize="15" Height="25" Margin="5" Click="Button_Registration_Click" Background="#FFDFDFDF" Foreground="#FF2B2B2B">
+            Зарегестрироваться
+        </Button>
+        <Button Name="Button_Authorization" Click="Button_Authorization_Click" Grid.Row="2" Grid.Column="2" FontSize="15" Height="25" Margin="5" Foreground="#FF291627">
+            <Button.Background>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FFB8B8B8" Offset="1"/>
+                    <GradientStop Color="#FFDDDDDD"/>
+                </RadialGradientBrush>
+            </Button.Background>
+            Войти
+        </Button>
+
+
+    </Grid>
+</Window>
